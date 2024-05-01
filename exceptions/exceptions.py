@@ -2,4 +2,5 @@
 
 
 class ioka_api_error(Exception):
-    pass
+    def __init__(self, message):
+        self.message = message
