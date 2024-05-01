@@ -1,8 +1,8 @@
-from src.client import ioka_api
+from src.client import IokaAPI
 from exceptions.exceptions import ioka_api_error
 from src.config import api_key, base_url
 
-ioka = ioka_api(base_url, api_key)
+ioka = IokaAPI(base_url, api_key)
 
 if __name__ == "__main__":
     try:
