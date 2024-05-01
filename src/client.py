@@ -1,5 +1,5 @@
 import requests
-from exceptions.exceptions import ioka_api_error
+from exceptions.exceptions import ioka_api_error, connection_error
 
 
 class IokaAPI:
@@ -14,7 +14,11 @@ class IokaAPI:
         try:
             response = requests.request(method, url, headers=headers, json=data)
             response.raise_for_status()
-            return response.json()
+            answer = response.json()
+            answer["status_code"] = response.status_code
+            return answer
+        except requests.exceptions.ConnectionError as e:
+            raise connection_error(e)
         except requests.exceptions.RequestException as e:
             raise ioka_api_error(e)
 
