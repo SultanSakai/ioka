@@ -7,3 +7,4 @@
 /dataSources/
 /dataSources.local.xml
 src/config.py
+my_library.egg-info/
