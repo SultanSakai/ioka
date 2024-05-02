@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='my_library',
+    name='my_library_ioka_api',
     version='1.0.0',
     description='simple library for ioka api',
     author='sultan',
