@@ -1,5 +1,5 @@
 import requests
-from exceptions.exceptions import ioka_api_error, connection_error
+from src.exceptions.exceptions import ioka_api_error, connection_error
 
 
 class IokaAPI:

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from models.payment import Payment
+from src.models.payment import Payment
 
 
 @dataclass

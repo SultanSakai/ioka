@@ -1,5 +1,5 @@
 import unittest
-from models.order import example_order
+from src.models.order import example_order
 from src.client import IokaAPI
 from src.config import api_key, base_url
 from unittest.mock import patch

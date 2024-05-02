@@ -1,5 +1,5 @@
 import unittest
-from models.payment import example_payment
+from src.models.payment import example_payment
 from src.client import IokaAPI
 from src.config import api_key, base_url
 from unittest.mock import patch
